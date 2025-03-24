@@ -7,5 +7,4 @@ services:
       - 80:80
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/conf.d/default.conf
-      - ./src/index.html:/usr/share/nginx/html
-      - ./nginx-html:/usr/share/nginx/html
+      - .coding/src/index.html:/usr/share/nginx/html
