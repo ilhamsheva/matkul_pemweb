@@ -1,0 +1,163 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: purple
+}
+
+.content-1 {
+    overflow: hidden;
+    text-align: center;
+    justify-content: center;
+    background-color: aqua;
+    margin-top: 10%;
+}
+
+.content-1 .content-2 {
+    padding: 2%;
+}
+
+.table-style {
+    width: 50%;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    text-align: center;
+    margin-left: 25%;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.table-style th {
+    background-color: blue;
+    color: white;
+    padding: 12px;
+    text-align: center;
+}
+
+.table-style td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-style tr:hover {
+    background-color: red;
+}
+
+.edit-btn {
+    background-color: #108981;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.edit-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+.delete-btn {
+    background-color: red;
+    color: white;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 4px;
+}
+
+.delete-btn:hover {
+    background-color: black;
+    cursor: pointer;
+}
+
+/* Styling form container */
+.form-container {
+    margin: 30px auto;
+    width: 80%;
+    max-width: 400px;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Styling form input */
+.form-container form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-container label {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.form-container input {
+    padding: 10px;
+    font-size: 14px;
+    border: 2px solid #ccc; /* Solid border seperti Tailwind */
+    border-radius: 5px;
+    outline: none;
+    transition: border 0.3s ease;
+}
+
+.form-container input:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.5);
+}
+
+/* Styling tombol submit */
+.form-container button {
+    margin-top: 15px;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.form-container button:hover {
+    background-color: #388E3C;
+}
+
+.nav-bar {
+    height: 80px;
+    background: #12355e;
+    padding: 0 30px;
+    color: black;
+}
+
+.logo {
+    line-height: 80px;
+    font-size: 35px;
+    float: left;
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.menu {
+    float: right;
+    line-height: 80px;
+}
+
+.menu a{
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.image .gambar img {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+}
