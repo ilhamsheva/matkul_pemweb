@@ -10,6 +10,7 @@ Hari ini belum masuk ke technical. Masih membahas tentang tools yang akan diguna
 **Pertemuan 1**
 - Website yang akan dibuat adalah website untuk memenuhi kebutuhan pengguna dalam mencari informasi. Website memiliki address, contohnya *facebook.com.*
 - HTML (HyperText Markup Language) adalah bahasa markup yang digunakan untuk membuat halaman web.
+- Tag <div> digunakan untuk membuat konten yang dapat diatur.
 - **.env**
 Untuk project kemudian, *COMPOSE_PROJECT_NAME* dibuat bebas sesuai nama. *IMAGE_TAG* dibuat memakai nim sendiri. Untuk sekarang, masih memakai latest.
 - **docker-compose.yml**
