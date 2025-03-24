@@ -1,0 +1,1 @@
+Hari ini belum masuk ke technical. Masih membahas tentang tools yang akan digunakan dalam pemrograman web.
