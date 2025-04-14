@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="iconstyle" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Bootstrap" width="30" height="24">
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Profile -->
+    <div class="row justify-content-center">
+        <div class="col-lg-5">
+            <div class="card mb-4 rounded-3 shadow-sm">
+                <div class="card-body text-center">
+                    <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="Gambar"
+                        class="rounded-circle image-fluid" style="width: 100px; height: 100px;">
+                    <h5 class="my-3">Ilham Sheva</h5>
+                    <p class="text-muted mb-1">Fakultas Ilmu Komputer</p>
+                    <p class="text-muted mb-4">Teknik Informatika</p>
+                    <div class="d-flex justify-content-center mb-2">
+                        <button type="button" class="btn btn-outline-info">Jakarta</button>
+                        <button type="button" class="btn btn-outline-info">14 April 2025</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- End Profile -->
+
+    <!-- About -->
+    <div class="card-body p-4 text-black justify-content-center">
+        <div class="mb-2 text-body">
+            <p class="lead fw-normal mb-1 text-center">ABOUT ME</p>
+        </div>
+        <div class=" p-4 bg-body-tertiary">
+            <p class="font-italic mb-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus nam aliquid
+                molestiae itaque? Aut eaque, iure alias a porro quas, cumque voluptatibus similique doloribus velit fuga
+                quia odit repellendus officiis!</p>
+        </div>
+    </div>
+    <!-- End About -->
+
+    <!-- Linked Personal -->
+    <div class="card mb-4 mb-lg-0">
+        <div class="card-body p-0">
+
+            <!-- Unordered List -->
+            <ul class="list-group list-group-flush rounded-3">
+
+                <!-- List Item -->
+                <li class="list-group-item d-flex justify-content-center align-items-center p-3">
+                    <a href="https://sso.esaunggul.ac.id" class="d-flex align-items-center">
+                        <i class="fa-solid fa-globe text-light me-2 p-2 rounded-circle"
+                            style="background-color: #333; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"></i>
+                        <span>University Website</span>
+                    </a>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-center align-items-center p-3">
+                    <a href="https://github.com/ilhamsheva" class="d-flex align-items-center">
+                        <i class="fab fa-github fa-lg text-light me-2 p-2 rounded-circle"
+                            style="background-color: #333; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"></i>
+                        <span>Github</span>
+                    </a>
+                </li>
+
+                <li class="list-group-item d-flex justify-content-center align-items-center">
+                    <a href="https://www.linkedin.com/in/ilham-sheva-renggafiarto-046682257/"
+                        class="d-flex align-items-center">
+                        <i class="fab fa-linkedin fa-lg text-light me-2 p-2 rounded-circle"
+                            style="background-color: #0077b5; width: 40px; height: 40px; display: flex; justify-content: center; align-items: center;"></i>
+                        <span>LinkedIn</span>
+                </li>
+
+                <!-- End List Item -->
+
+            </ul>
+        </div>
+    </div>
+    <!-- End Linked Personal -->
+
+    <!-- SKILL -->
+    <div class="row justify-content-center">
+        <div class="col-md-12">
+            <div class="card mb-4">
+                <div class="card-body">
+                    <h5 class="mb-4">My Skill</h5>
+
+                    <!-- HTML Skill -->
+                    <p class="mb-1" style="font-size: .9rem;">
+                        <i class="fab fa-html5 me-2"></i> HTML
+                    </p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90"
+                            aria-valuemin="0" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- CSS Skill -->
+                    <p class="mb-1" style="font-size: .9rem;">
+                        <i class="fab fa-css3-alt me-2"></i> CSS
+                    </p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 85%" aria-valuenow="85"
+                            aria-valuemin="0" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- JavaScript Skill -->
+                    <p class="mb-1" style="font-size: .9rem;">
+                        <i class="fab fa-js-square me-2"></i> JavaScript
+                    </p>
+                    <div class="progress mb-3">
+                        <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75"
+                            aria-valuemin="0" aria-hidden="true"></div>
+                    </div>
+
+                    <!-- Laravel Skill -->
+                    <p class="mb-1" style="font-size: .9rem;">
+                        <i class="fab fa-laravel me-2"></i> Laravel
+                    </p>
+                    <div class="progress">
+                        <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80"
+                            aria-valuemin="0" aria-hidden="true"></div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="container text-center">
+            <p class="text-muted">© 2024 Company, Inc"></p>
+    </footer>
+    <!-- End FOOTER -->
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+    integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+    crossorigin="anonymous"></script>
+
+</html>
