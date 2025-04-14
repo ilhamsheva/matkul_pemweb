@@ -1,5 +1,7 @@
 <?php
 
+use App\Livewire\ShowAbout;
+use App\Livewire\ShowTeam;
 use App\Livewire\ShowHomePage;
 use Illuminate\Support\Facades\Route;
 use Livewire\Livewire;
@@ -14,11 +16,11 @@ Livewire::setUpdateRoute(function ($handle) {
 Livewire::setScriptRoute(function ($handle) {
     return Route::get(config('app.asset_prefix') . '/livewire/livewire.js', $handle);
 });
-/*
-/ END
-*/
+
 // Route::get('/', function () {
 //     return view('welcome');
 // });
 
 Route::get('/', ShowHomePage::class)->name('home');
+Route::get('/about', ShowAbout::class)->name('about');
+Route::get('/team', ShowTeam::class)->name('team');
