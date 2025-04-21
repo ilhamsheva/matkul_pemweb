@@ -1,27 +1,57 @@
 @php
-    // Tambahkan model
     use App\Models\Footer;
-
-    // Tambahkan footer
     $footer = Footer::first();
 @endphp
 
-<footer id="footer" class="footer">
+<footer class="section-sm bg-tertiary">
     <div class="container">
-        <div class="social-links d-flex justify-content-center">
-            <a href="#"><i class="bi bi-twitter-x"></i></a>
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
+        <div class="row justify-content-between">
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">Service</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="service-details.html">Digital Marketing</a>
+                        </li>
+                        <li class="mb-2"><a href="service-details.html">Web Design</a>
+                        </li>
+                        <li class="mb-2"><a href="service-details.html">Logo Design</a>
+                        </li>
+                        <li class="mb-2"><a href="service-details.html">Graphic Design</a>
+                        </li>
+                        <li class="mb-2"><a href="service-details.html">SEO</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="mb-2"><a href="#!">About Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#!">Contact Us</a>
+                        </li>
+                        <li class="mb-2"><a href="#!">Blog</a>
+                        </li>
+                        <li class="mb-2"><a href="#!">Team</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-2 col-md-4 col-6 mb-4">
+                <div class="footer-widget">
+                    <h5 class="mb-4 text-primary font-secondary">Other Links</h5>
+                    <ul class="list-unstyled">
+                        <li class="list-inline-item me-4"><a class="text-black"
+                                href="privacy-policy.html">Privacy Policy</a>
+                        </li>
+                        <li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp;
+                                Conditions</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        <br>
-        
-        <div class="copyright text-center">
-            <a wire:navigate href="{{route('home')}}">{{$footer->footer ?? ''}}</a>
-        </div>
-    </div>
 
-    <!-- Scroll Top -->
-    <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
-        class="bi bi-arrow-up-short"></i></a>
+    </div>
 </footer>

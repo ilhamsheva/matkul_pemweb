@@ -17,20 +17,26 @@ class PageConfigResource extends Resource
 {
     protected static ?string $model = PageConfig::class;
 
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-document-text';
+
+    protected static ?string $navigationGroup = 'Page';
+
+    protected static ?string $navigationLabel = 'Page Config';
+    protected static ?string $breadcrumb = 'Page Config';
+    protected static ?string $pluralLabel = 'Page Setting';
 
     public static function form(Form $form): Form
     {
         return $form
             ->schema([
-                Forms\Components\FileUpload::make('image')
-                    ->image(),
-                Forms\Components\TextInput::make('name')
+                Forms\Components\TextInput::make('title')
                     ->maxLength(255)
                     ->default(null),
                 Forms\Components\TextInput::make('description')
                     ->maxLength(255)
                     ->default(null),
+                Forms\Components\FileUpload::make('image')
+                    ->image(),
             ]);
     }
 
@@ -38,11 +44,11 @@ class PageConfigResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\ImageColumn::make('image'),
-                Tables\Columns\TextColumn::make('name')
+                Tables\Columns\TextColumn::make('title')
                     ->searchable(),
                 Tables\Columns\TextColumn::make('description')
                     ->searchable(),
+                Tables\Columns\ImageColumn::make('image'),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

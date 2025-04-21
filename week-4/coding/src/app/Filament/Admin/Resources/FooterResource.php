@@ -23,9 +23,18 @@ class FooterResource extends Resource
     {
         return $form
             ->schema([
-                Forms\Components\TextInput::make('footer')
-                    ->maxLength(255)
-                    ->default(null),
+                Forms\Components\TextInput::make('section')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('label')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('url')
+                    ->required()
+                    ->maxLength(255),
+                Forms\Components\TextInput::make('order')
+                    ->required()
+                    ->numeric(),
             ]);
     }
 
@@ -33,8 +42,15 @@ class FooterResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('footer')
+                Tables\Columns\TextColumn::make('section')
                     ->searchable(),
+                Tables\Columns\TextColumn::make('label')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('url')
+                    ->searchable(),
+                Tables\Columns\TextColumn::make('order')
+                    ->numeric()
+                    ->sortable(),
                 Tables\Columns\TextColumn::make('created_at')
                     ->dateTime()
                     ->sortable()

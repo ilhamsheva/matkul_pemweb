@@ -8,12 +8,11 @@ use Illuminate\Database\Eloquent\Model;
 class Footer extends Model
 {
     use HasFactory;
-
-    // Dapat tabel dari mana
     protected $table = 'footers';
-
-    // Dapat field dari tabel footer
     protected $fillable = [
-        'footer',
+        'section',
+        'label',
+        'url',
+        'order',
     ];
 }

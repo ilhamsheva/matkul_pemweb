@@ -1,30 +1,23 @@
 <head>
     <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <title>Portofolio</title>
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <title>Livewire and filament</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+    <meta name="description" content="This is meta description">
+    <meta name="author" content="Themefisher">
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+    <link rel="icon" href="images/favicon.png" type="image/x-icon">
 
-    <!-- Favicons -->
-    <link href="{{ asset('front/assets/img/favicon.png') }}" rel="icon">
-    <link href="{{ asset('front/assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon">
+    <!-- # Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
 
-    <!-- Fonts -->
-    <link href="https://fonts.googleapis.com" rel="preconnect">
-    <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:wght@100..900&family=Noto+Sans:wght@100..900&family=Questrial&display=swap"
-        rel="stylesheet">
+    <!-- # CSS Plugins -->
+    <link rel="stylesheet" href="{{asset('front/plugins/slick/slick.css')}}">
+    <link rel="stylesheet" href="{{asset('front/plugins/sont-awesome/fontawesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('front/plugins/sont-awesome/brands.css')}}">
+    <link rel="stylesheet" href="{{asset('front/plugins/sont-awesome/brands.css')}}">
 
-    <!-- Vendor CSS Files -->
-    <link href="{{ asset('front/assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('front/assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
-    <link href="{{ asset('front/assets/vendor/aos/aos.css') }}" rel="stylesheet">
-    <link href="{{ asset('front/assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
-    <link href="{{ asset('front/assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
-
-    <!-- Main CSS File -->
-    <link href="{{ asset('front/assets/css/main.css') }}" rel="stylesheet">
-
-    @livewireStyles
+    <!-- # Main Style Sheet -->
+    <link rel="stylesheet" href="{{asset('front/css/style.css')}}">
 </head>

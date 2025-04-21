@@ -2,9 +2,8 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 use Illuminate\Database\Seeder;
-use App\Models\Footer;
+use App\Models\Footer; // Ensure you have the correct namespace for your Footer model
 
 class FooterSeeder extends Seeder
 {
@@ -13,8 +12,14 @@ class FooterSeeder extends Seeder
      */
     public function run(): void
     {
-        Footer::create([
-            'footer' => '© 2023 Your Company. All rights reserved.',
-        ]);
+        // Check if any Footer record exists before seeding
+        if (Footer::count() == 0) {
+            Footer::create([
+                'section' => 'About Us',  // Section name
+                'label' => 'We are a leading company in our industry.', // Label content
+                'url' => 'https://example.com/about',  // URL for the link
+                'order' => 1,  // Order of display
+            ]);
+        }
     }
 }

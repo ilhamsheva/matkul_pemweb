@@ -20,15 +20,17 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin',
                 'email' => 'admin@admin.com',
             ]);
-
-
+    
             $user->assignRole('super_admin');
         }
 
         $this->call([
-            LogoSeeder::class,
+            ProductSeeder::class,
             PageConfigSeeder::class,
+            LogoSeeder::class,
+            SeoSeeder::class,
             FooterSeeder::class,
+            ServiceSeeder::class,
         ]);
     }
 }

@@ -13,10 +13,12 @@ class PageConfigSeeder extends Seeder
      */
     public function run(): void
     {
-        PageConfig::create([
-            'image' => 'front/assets/img/porto-removebg-preview.png',
-            'name' => 'Ilham Sheva',
-            'description' => 'Undergraduate Student at Universitas Esa Unggul, Jakarta, Indonesia. Passionate about web development and open source.',
-        ]);
+        if (PageConfig::count() == 0) {
+            PageConfig::create([
+                'title' => 'Welcome to Our Website',
+                'description' => 'Discover amazing content and connect with us.',
+                'image' => '',
+            ]);
+        }
     }
 }

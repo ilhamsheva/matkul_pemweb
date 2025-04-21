@@ -1,34 +1,21 @@
 ## Senin, 21 April 2025
 
-Pokok aplikasi yang dijalankan adalah:
-- app/Model: ini buat class
-- app/Http/Controller: ini untuk mengatur logika aplikasi dan menangani permintaan dari pengguna
-- app/Filament: ini untuk mengelola tampilan dan antarmuka admin
-- app/Livewire: ini untuk membangun komponen interaktif di aplikasi
-- public: untuk menyimpan file statis dan aset publik seperti gambar, CSS, dan JavaScript
-- database/migration: untuk mengelola struktur tabel dan skema basis data
-- database/seeder: untuk data dummy
+Hari ini kita belajar cara mengedit di **admin panel**. Berikut adalah beberapa kode yang digunakan untuk mengonfigurasi panel admin:
 
+- `protected static ?string $model = Product::class;`:  
+  Berfungsi untuk menentukan **model** yang digunakan dalam panel admin.
 
-Kita hari ini belajar cara memisah folder lagi. Minggu kemarin, kita menimpa semua header, navbar, footer, dan script di `app.blade.php`. Sekarang, semua itu dipindah ke `resource/views/components/partials` agar lebih terorganisir dan memudahkan pemeliharaan kode di masa mendatang.
-isi folder components/partials akan terdiri dari file-file seperti header.blade.php, navbar.blade.php, footer.blade.php, dan script.blade.php
+- `protected static ?string $navigationIcon = 'heroicon-o-shopping-cart';`:  
+  Berfungsi untuk menentukan **ikon navigasi** yang ditampilkan di panel admin.
 
-Lalu, semuanya dipanggil kembali di app.blade.php menggunakan sintaks Blade seperti @include('components.partials.header'), @include('components.partials.navbar'), @include('components.partials.footer'), dan @include('components.partials.script')
+- `protected static ?string $navigationGroup = 'Product';`:  
+  Berfungsi untuk mengelompokkan **item navigasi** dalam panel admin.
 
-`php artisan make:model NamaModel -ms`: perintah ini akan membuat model baru bernama NamaModel beserta migrasi dan seeder terkait.
+- `protected static ?string $navigationLabel = 'Product Manager';`:  
+  Berfungsi untuk menentukan **label** yang ditampilkan untuk item navigasi di panel admin.
 
-`php artisan make:filament-resource Footer --generate`: perintah ini akan membuat sumber daya Filament baru bernama Footer dan secara otomatis.
+- `protected static ?string $breadcrumb = 'Product Manager';`:  
+  Berfungsi untuk menentukan **jalur navigasi** yang ditampilkan di panel admin untuk item ini.
 
-Cara mengambil dari database adalah
-
-``@php
-    // Tambahkan model
-    use App\Models\Footer;
-
-    // Tambahkan footer
-    $footer = Footer::first();
-@endphp``
-
-letakkan itu di salah satu file view yang ingin menampilkan footer, seperti `footer.blade.php`
-
-lalu tambahkan `$footer->footer ?? ''` yang berfungsi untuk menampilkan konten footer jika ada
+- `protected static ?string $pluralLabel = 'Product Settings';`:  
+  Berfungsi untuk menentukan **label jamak** yang ditampilkan untuk item navigasi di panel admin.

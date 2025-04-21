@@ -1,20 +1,16 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 
+<html lang="en-us">
 @include('components.partials.header')
 
-<body class="index-page">
-
+<body>
     @include('components.partials.navbar')
 
-    {{ $slot }}
+    {{$slot}}
 
-    {{-- @yield('footer') --}}
+    @include('components.partials.upper-footer')
+
     @include('components.partials.footer')
-
-    @livewireScripts
-
-    @include('components.partials.script')
 </body>
-
+    @include('components.partials.script')
 </html>
