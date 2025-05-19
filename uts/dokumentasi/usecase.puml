@@ -1,0 +1,26 @@
+@startuml usecase
+actor Mahasiswa
+actor Admin
+
+rectangle "Sistem Informasi Beasiswa" {
+    (Login)
+    (Lihat Daftar Beasiswa)
+    (Daftar Beasiswa)
+    (Unggah Dokumen)
+    (Cek Status Seleksi)
+    (Kelola Beasiswa)
+    (Verifikasi Pendaftar)
+    (Umumkan Hasil)
+}
+
+Mahasiswa --> (Login)
+Mahasiswa --> (Lihat Daftar Beasiswa)
+Mahasiswa --> (Daftar Beasiswa)
+Mahasiswa --> (Unggah Dokumen)
+Mahasiswa --> (Cek Status Seleksi)
+
+Admin --> (Login)
+Admin --> (Kelola Beasiswa)
+Admin --> (Verifikasi Pendaftar)
+Admin --> (Umumkan Hasil)
+@enduml

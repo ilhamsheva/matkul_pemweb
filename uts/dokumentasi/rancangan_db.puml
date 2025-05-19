@@ -1,0 +1,42 @@
+@startuml rancangan_db
+entity "User" {
+  * id : int
+  --
+  name : string
+  email : string
+  password : string
+  nim : string
+  role : enum
+}
+
+entity "Beasiswa" {
+  * id : int
+  --
+  nama_beasiswa : string
+  deskripsi : text
+  syarat : text
+  deadline : date
+  status : enum
+}
+
+entity "Pendaftaran" {
+  * id : int
+  --
+  user_id : int
+  beasiswa_id : int
+  tanggal_daftar : date
+  status : enum
+}
+
+entity "Dokumen" {
+  * id : int
+  --
+  pendaftaran_id : int
+  nama_dokumen : string
+  file_path : string
+}
+
+User ||--o{ Pendaftaran : has
+Beasiswa ||--o{ Pendaftaran : has
+Pendaftaran ||--o{ Dokumen : has
+@enduml
